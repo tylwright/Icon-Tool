@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="restoreOriginalIcon" destination="Giu-FO-0MR" id="MVb-HD-2NA"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="Ifv-Am-6dz" customClass="AppController">
+            <connections>
+                <outlet property="arrayController" destination="zZl-1p-YWa" id="0mY-dS-cDN"/>
+                <outlet property="currentIconWell" destination="0F9-iG-fv2" id="fcl-aC-BLW"/>
+                <outlet property="currentIconWellCell" destination="23w-zz-PBD" id="Z6a-Xe-jxX"/>
+                <outlet property="loadItem" destination="tM6-Be-nvj" id="G3Y-sW-WE0"/>
+                <outlet property="originalIconWell" destination="7Ml-c0-bnL" id="i8I-HO-vWS"/>
+                <outlet property="restoreButton" destination="Giu-FO-0MR" id="gYc-AT-ETH"/>
+                <outlet property="submitFeedback" destination="odq-f3-mfH" id="eCe-lF-8du"/>
+            </connections>
+        </customObject>
+        <arrayController id="zZl-1p-YWa"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="Icon Tool" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Icon Tool" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About Icon Tool" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide Icon Tool" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit Icon Tool" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="Icon Tool" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="gf" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="819" y="390" width="900" height="664"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="900" height="664"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIs-xI-vQ7">
+                        <rect key="frame" x="15" y="190" width="870" height="432"/>
+                        <subviews>
+                            <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txZ-ql-aXl">
+                                <rect key="frame" x="-3" y="7" width="876" height="432"/>
+                                <clipView key="contentView" ambiguous="YES" misplaced="YES" drawsBackground="NO" copiesOnScroll="NO" id="SQl-zq-z3P">
+                                    <rect key="frame" x="1" y="1" width="248" height="158"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView ambiguous="YES" selectable="YES" id="4l1-VB-mHd">
+                                            <rect key="frame" x="0.0" y="0.0" width="248" height="158"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <backgroundFilters>
+                                                <ciFilter name="CIBlendWithAlphaMask">
+                                                    <configuration>
+                                                        <null key="inputBackgroundImage"/>
+                                                        <null key="inputImage"/>
+                                                        <null key="inputMaskImage"/>
+                                                    </configuration>
+                                                </ciFilter>
+                                            </backgroundFilters>
+                                            <color key="primaryBackgroundColor" red="0.67840514519999995" green="0.67840514519999995" blue="0.67840514519999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <binding destination="zZl-1p-YWa" name="content" keyPath="arrangedObjects" id="5RK-u5-htn"/>
+                                                <outlet property="itemPrototype" destination="27o-Bk-Fj0" id="dE6-nI-cgJ"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="nIv-7T-NCO">
+                                    <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cJx-Pw-A88">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                    </view>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ml-c0-bnL">
+                        <rect key="frame" x="613" y="42" width="97" height="95"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="kyy-WK-823"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Nj-ia-x2X">
+                        <rect key="frame" x="635" y="20" width="52" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Original" id="uDE-ri-i0n">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enX-TY-uRt">
+                        <rect key="frame" x="219" y="20" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Current" id="ob2-gg-l8R">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrv-hT-rok">
+                        <rect key="frame" x="725" y="125" width="4" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Zv9-Dc-1yt">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Giu-FO-0MR">
+                        <rect key="frame" x="619" y="149" width="85" height="17"/>
+                        <buttonCell key="cell" type="inline" title="Restore" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="ctq-3M-Azg">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="restoreButton:" target="Ifv-Am-6dz" id="fnM-pl-Fo1"/>
+                        </connections>
+                    </button>
+                    <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="2ip-Hv-hho">
+                        <rect key="frame" x="12" y="179" width="876" height="5"/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <imageView focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0F9-iG-fv2">
+                        <rect key="frame" x="196" y="42" width="97" height="95"/>
+                        <imageCell key="cell" selectable="YES" editable="YES" focusRingType="none" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="grayBezel" id="23w-zz-PBD"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7FU-Uw-HLi">
+                        <rect key="frame" x="296" y="117" width="29" height="17"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="&lt;--" id="QQA-gW-3t5">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xig-7X-RpK">
+                        <rect key="frame" x="296" y="45" width="29" height="17"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="&lt;--" id="anb-rA-JSY">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BdG-En-O75">
+                        <rect key="frame" x="296" y="72" width="216" height="34"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Drag a new icon into the box to replace the current icon." id="Swt-JD-SZT">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odq-f3-mfH">
+                        <rect key="frame" x="764" y="638" width="121" height="19"/>
+                        <buttonCell key="cell" type="recessed" title="Submit Feedback" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7oe-PO-zBo">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="systemBold" size="12"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="submitFeedback:" target="Ifv-Am-6dz" id="5YR-48-Xqf"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ra4-JO-g5o">
+                        <rect key="frame" x="13" y="639" width="86" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Icon Tool" id="DaT-pn-zZS">
+                            <font key="font" size="17" name="Arial-BoldMT"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tGn-qr-W9H">
+                        <rect key="frame" x="93" y="639" width="31" height="11"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="v1.0" id="95A-ta-NTd">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="880" y="480"/>
+        </window>
+        <customObject id="dbG-9N-dGN" customClass="AppControler"/>
+        <collectionViewItem id="27o-Bk-Fj0">
+            <connections>
+                <outlet property="view" destination="faV-qq-let" id="KxT-Nv-Vzc"/>
+            </connections>
+        </collectionViewItem>
+        <view id="faV-qq-let">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q95-KI-sIk">
+                    <rect key="frame" x="-2" y="6" width="143" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="X6d-1d-SEa">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="27o-Bk-Fj0" name="value" keyPath="representedObject.itemName" id="7R5-I9-OsH"/>
+                    </connections>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BxC-8e-n1E">
+                    <rect key="frame" x="18" y="30" width="103" height="77"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="f3x-vA-ZaA"/>
+                    <connections>
+                        <binding destination="27o-Bk-Fj0" name="value" keyPath="representedObject.icon" id="DPD-eT-OeS"/>
+                    </connections>
+                </imageView>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Z2-0V-d4t">
+                    <rect key="frame" x="0.0" y="0.0" width="139" height="125"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" transparent="YES" imageScaling="proportionallyDown" inset="2" id="tM6-Be-nvj">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <binding destination="27o-Bk-Fj0" name="title" keyPath="representedObject.fullPath" id="DqQ-Hl-Bya"/>
+                        </connections>
+                    </buttonCell>
+                    <connections>
+                        <action selector="loadItem:" target="Ifv-Am-6dz" id="UPy-yz-sIa"/>
+                        <binding destination="27o-Bk-Fj0" name="title" keyPath="representedObject.fullPath" id="2aZ-nk-QFU"/>
+                        <binding destination="27o-Bk-Fj0" name="toolTip" keyPath="representedObject.fullPath" previousBinding="2aZ-nk-QFU" id="QFk-yB-lhD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="529.5" y="268.5"/>
+        </view>
+    </objects>
+</document>
