@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C0C2A3619FF276D0067DAB0 /* IconTool.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C2A3519FF276D0067DAB0 /* IconTool.icns */; };
+		9C1AFE7A19FCB371002B7F88 /* FileManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1AFE7919FCB371002B7F88 /* FileManagement.m */; };
+		9C47D01419F779380044C85F /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C47D01319F779380044C85F /* AppController.m */; };
+		9C47D01719F779680044C85F /* items.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C47D01619F779680044C85F /* items.m */; };
+		9CAFF87319F6D05C003FEBB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAFF87219F6D05C003FEBB3 /* main.m */; };
+		9CAFF87619F6D05C003FEBB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAFF87519F6D05C003FEBB3 /* AppDelegate.m */; };
+		9CAFF87819F6D05C003FEBB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAFF87719F6D05C003FEBB3 /* Images.xcassets */; };
+		9CAFF87B19F6D05C003FEBB3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAFF87919F6D05C003FEBB3 /* MainMenu.xib */; };
+		9CAFF88719F6D05C003FEBB3 /* Icon_ToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAFF88619F6D05C003FEBB3 /* Icon_ToolTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CAFF88119F6D05C003FEBB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CAFF86519F6D05C003FEBB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CAFF86C19F6D05C003FEBB3;
+			remoteInfo = "Icon Tool";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C0C2A3419FF1FC10067DAB0 /* Icon Tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Icon Tool.entitlements"; sourceTree = "<group>"; };
+		9C0C2A3519FF276D0067DAB0 /* IconTool.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = IconTool.icns; sourceTree = "<group>"; };
+		9C1AFE7819FCB371002B7F88 /* FileManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagement.h; sourceTree = "<group>"; };
+		9C1AFE7919FCB371002B7F88 /* FileManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagement.m; sourceTree = "<group>"; };
+		9C47CFDE19F755670044C85F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		9C47D01219F779380044C85F /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		9C47D01319F779380044C85F /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		9C47D01519F779680044C85F /* items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = items.h; sourceTree = "<group>"; };
+		9C47D01619F779680044C85F /* items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = items.m; sourceTree = "<group>"; };
+		9CAFF86D19F6D05C003FEBB3 /* Icon Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Icon Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CAFF87119F6D05C003FEBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CAFF87219F6D05C003FEBB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CAFF87419F6D05C003FEBB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CAFF87519F6D05C003FEBB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CAFF87719F6D05C003FEBB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9CAFF87A19F6D05C003FEBB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9CAFF88019F6D05C003FEBB3 /* Icon ToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Icon ToolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CAFF88519F6D05C003FEBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CAFF88619F6D05C003FEBB3 /* Icon_ToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Icon_ToolTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CAFF86A19F6D05C003FEBB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CAFF87D19F6D05C003FEBB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CAFF86419F6D05C003FEBB3 = {
+			isa = PBXGroup;
+			children = (
+				9C47CFDE19F755670044C85F /* ImageIO.framework */,
+				9CAFF86F19F6D05C003FEBB3 /* Icon Tool */,
+				9CAFF88319F6D05C003FEBB3 /* Icon ToolTests */,
+				9CAFF86E19F6D05C003FEBB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CAFF86E19F6D05C003FEBB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CAFF86D19F6D05C003FEBB3 /* Icon Tool.app */,
+				9CAFF88019F6D05C003FEBB3 /* Icon ToolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CAFF86F19F6D05C003FEBB3 /* Icon Tool */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C2A3419FF1FC10067DAB0 /* Icon Tool.entitlements */,
+				9CAFF87519F6D05C003FEBB3 /* AppDelegate.m */,
+				9CAFF87419F6D05C003FEBB3 /* AppDelegate.h */,
+				9C1AFE7819FCB371002B7F88 /* FileManagement.h */,
+				9C1AFE7919FCB371002B7F88 /* FileManagement.m */,
+				9CAFF87719F6D05C003FEBB3 /* Images.xcassets */,
+				9C0C2A3519FF276D0067DAB0 /* IconTool.icns */,
+				9C47D01519F779680044C85F /* items.h */,
+				9C47D01619F779680044C85F /* items.m */,
+				9CAFF87919F6D05C003FEBB3 /* MainMenu.xib */,
+				9C47D01219F779380044C85F /* AppController.h */,
+				9C47D01319F779380044C85F /* AppController.m */,
+				9CAFF87019F6D05C003FEBB3 /* Supporting Files */,
+			);
+			path = "Icon Tool";
+			sourceTree = "<group>";
+		};
+		9CAFF87019F6D05C003FEBB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CAFF87119F6D05C003FEBB3 /* Info.plist */,
+				9CAFF87219F6D05C003FEBB3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CAFF88319F6D05C003FEBB3 /* Icon ToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CAFF88619F6D05C003FEBB3 /* Icon_ToolTests.m */,
+				9CAFF88419F6D05C003FEBB3 /* Supporting Files */,
+			);
+			path = "Icon ToolTests";
+			sourceTree = "<group>";
+		};
+		9CAFF88419F6D05C003FEBB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CAFF88519F6D05C003FEBB3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CAFF86C19F6D05C003FEBB3 /* Icon Tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CAFF88A19F6D05C003FEBB3 /* Build configuration list for PBXNativeTarget "Icon Tool" */;
+			buildPhases = (
+				9CAFF86919F6D05C003FEBB3 /* Sources */,
+				9CAFF86A19F6D05C003FEBB3 /* Frameworks */,
+				9CAFF86B19F6D05C003FEBB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Icon Tool";
+			productName = "Icon Tool";
+			productReference = 9CAFF86D19F6D05C003FEBB3 /* Icon Tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CAFF87F19F6D05C003FEBB3 /* Icon ToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CAFF88D19F6D05C003FEBB3 /* Build configuration list for PBXNativeTarget "Icon ToolTests" */;
+			buildPhases = (
+				9CAFF87C19F6D05C003FEBB3 /* Sources */,
+				9CAFF87D19F6D05C003FEBB3 /* Frameworks */,
+				9CAFF87E19F6D05C003FEBB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CAFF88219F6D05C003FEBB3 /* PBXTargetDependency */,
+			);
+			name = "Icon ToolTests";
+			productName = "Icon ToolTests";
+			productReference = 9CAFF88019F6D05C003FEBB3 /* Icon ToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CAFF86519F6D05C003FEBB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Wright Labs";
+				TargetAttributes = {
+					9CAFF86C19F6D05C003FEBB3 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = YXXTL58Y97;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					9CAFF87F19F6D05C003FEBB3 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 9CAFF86C19F6D05C003FEBB3;
+					};
+				};
+			};
+			buildConfigurationList = 9CAFF86819F6D05C003FEBB3 /* Build configuration list for PBXProject "Icon Tool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CAFF86419F6D05C003FEBB3;
+			productRefGroup = 9CAFF86E19F6D05C003FEBB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CAFF86C19F6D05C003FEBB3 /* Icon Tool */,
+				9CAFF87F19F6D05C003FEBB3 /* Icon ToolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CAFF86B19F6D05C003FEBB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CAFF87819F6D05C003FEBB3 /* Images.xcassets in Resources */,
+				9CAFF87B19F6D05C003FEBB3 /* MainMenu.xib in Resources */,
+				9C0C2A3619FF276D0067DAB0 /* IconTool.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CAFF87E19F6D05C003FEBB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CAFF86919F6D05C003FEBB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C47D01719F779680044C85F /* items.m in Sources */,
+				9CAFF87619F6D05C003FEBB3 /* AppDelegate.m in Sources */,
+				9C47D01419F779380044C85F /* AppController.m in Sources */,
+				9C1AFE7A19FCB371002B7F88 /* FileManagement.m in Sources */,
+				9CAFF87319F6D05C003FEBB3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CAFF87C19F6D05C003FEBB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CAFF88719F6D05C003FEBB3 /* Icon_ToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CAFF88219F6D05C003FEBB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CAFF86C19F6D05C003FEBB3 /* Icon Tool */;
+			targetProxy = 9CAFF88119F6D05C003FEBB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CAFF87919F6D05C003FEBB3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CAFF87A19F6D05C003FEBB3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CAFF88819F6D05C003FEBB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9CAFF88919F6D05C003FEBB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9CAFF88B19F6D05C003FEBB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Icon Tool/Icon Tool.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Icon Tool/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CAFF88C19F6D05C003FEBB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Icon Tool/Icon Tool.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Icon Tool/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CAFF88E19F6D05C003FEBB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Icon ToolTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Icon Tool.app/Contents/MacOS/Icon Tool";
+			};
+			name = Debug;
+		};
+		9CAFF88F19F6D05C003FEBB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Icon ToolTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Icon Tool.app/Contents/MacOS/Icon Tool";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CAFF86819F6D05C003FEBB3 /* Build configuration list for PBXProject "Icon Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CAFF88819F6D05C003FEBB3 /* Debug */,
+				9CAFF88919F6D05C003FEBB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CAFF88A19F6D05C003FEBB3 /* Build configuration list for PBXNativeTarget "Icon Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CAFF88B19F6D05C003FEBB3 /* Debug */,
+				9CAFF88C19F6D05C003FEBB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CAFF88D19F6D05C003FEBB3 /* Build configuration list for PBXNativeTarget "Icon ToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CAFF88E19F6D05C003FEBB3 /* Debug */,
+				9CAFF88F19F6D05C003FEBB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CAFF86519F6D05C003FEBB3 /* Project object */;
+}
